@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}DNK FORENZIKA{% endblock title %}
+
+{% block body %}
+    <h2>Vnesite DNK skripto:</h2>
+    <form method="post" action="/">
+        <textarea name="script" cols="100" rows="25"></textarea>
+        <p></p>
+        <button type="submit">ANALIZIRAJ</button>
+    </form>
+{% endblock body%}
