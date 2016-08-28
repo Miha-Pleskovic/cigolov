@@ -78,6 +78,11 @@ class MainHandler(BaseHandler):
         return self.render_template("dna-forensics.html")
 
     def post(self):
+        culprit_gender = "<pre>Spol:          NEZNAN</pre>"
+        culprit_race = "<pre>Rasa:          NEZNANA</pre>"
+        culprit_hair_color = "<pre>Barva las:     NEZNANA</pre>"
+        culprit_eye_color = "<pre>Barva oči:     NEZNANA</pre>"
+        culprit_face_shape = "<pre>Oblika obraza: NEZNANA</pre>"
         dna = self.request.get("script")
         culprit = []
 
