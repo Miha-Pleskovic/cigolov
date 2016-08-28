@@ -75,7 +75,7 @@ suspects_list.append(miha)
 
 class MainHandler(BaseHandler):
     def get(self):
-        return self.render_template("cigolov.html")
+        return self.render_template("dna-forensics.html")
 
     def post(self):
         dna = self.request.get("script")
